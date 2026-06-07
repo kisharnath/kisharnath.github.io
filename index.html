@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardening Hub 🌱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5fff5;
-            color: #333;
-        }
+<title>Gardening Tips Ujjal</title>
 
-        header {
-            background: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+<style>
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5fff5;
+    color:#333;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+/* HEADER */
 
-        h2 {
-            color: #2e7d32;
-        }
+.hero img{
+    width:100%;
+    display:block;
+}
 
-        .btn {
-            display: inline-block;
-            background: #2e7d32;
-            color: white;
-            padding: 12px 18px;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
+/* CONTAINER */
 
-        .btn:hover {
-            background: #1b5e20;
-        }
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
 
-        ul {
-            line-height: 1.8;
-        }
+/* CARD */
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #e8f5e9;
-        }
-    </style>
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#2e7d32;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#1b5e20;
+}
+
+/* LIST */
+
+ul{
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#e8f5e9;
+}
+
+/* SEARCH */
+
+input[type=text]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+    .container{
+        padding:10px;
+    }
+}
+
+</style>
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -70,87 +101,127 @@
     })(window, document, "clarity", "script", "x39dvdnev8");
 </script>
 </head>
+
 <body>
 
-<header>
-    <h1>🌱 Gardening Hub</h1>
-    <p>Ingredients • Videos • Nursery Finder • Community</p>
+<!-- HEADER IMAGE -->
+
+<header class="hero">
+    <img src="banner.jpg" alt="Gardening Tips Ujjal">
 </header>
 
 <div class="container">
 
+    <!-- ABOUT -->
+
     <div class="card">
-        <h2>📋 Today's Recipe Ingredients</h2>
+        <h2>🌱 Welcome to Gardening Tips Ujjal</h2>
+
+        <p>
+            Learn gardening, organic fertilizers,
+            plant care tips and find nearby nurseries.
+        </p>
+    </div>
+
+    <!-- INGREDIENTS -->
+
+    <div class="card">
+        <h2>🧪 Today's Fertilizer Ingredients</h2>
+
         <ul>
             <li>Neem Cake - 100g</li>
             <li>Vermicompost - 200g</li>
             <li>Cow Dung Compost - 300g</li>
-            <li>Water - 1 Liter</li>
+            <li>Water - 1 Litre</li>
         </ul>
     </div>
 
+    <!-- YOUTUBE -->
+
     <div class="card">
         <h2>🎥 Watch Full Video</h2>
-        <p>Watch the complete gardening tutorial.</p>
+
+        <p>
+            Watch complete gardening tutorials on YouTube.
+        </p>
 
         <a class="btn"
            href="https://youtube.com/@YOURCHANNEL"
            target="_blank">
-           Watch on YouTube
+
+            Watch YouTube
         </a>
     </div>
 
+    <!-- WHATSAPP -->
+
     <div class="card">
         <h2>💬 Join WhatsApp Community</h2>
-        <p>Get daily gardening tips and updates.</p>
+
+        <p>
+            Daily gardening tips and updates.
+        </p>
 
         <a class="btn"
            href="https://chat.whatsapp.com/YOUR-LINK"
            target="_blank">
-           Join Community
+
+            Join WhatsApp
         </a>
     </div>
 
+    <!-- NURSERY -->
+
     <div class="card">
-        <h2>📍 Find Nearby Nurseries</h2>
-        <p>Coming Soon 🚀</p>
+
+        <h2>📍 Find Nearby Nursery</h2>
+
+        <p>
+            Search nurseries near your location.
+        </p>
 
         <a class="btn"
-           href="#"
-           onclick="alert('Nursery Finder Launching Soon!')">
-           Search Nursery
+           href="https://www.google.com/maps/search/nursery+near+me"
+           target="_blank">
+
+            Find Nursery
         </a>
+
     </div>
 
+    <!-- GUIDES -->
+
     <div class="card">
-        <h2>🌿 Plant Care Guides</h2>
+
+        <h2>🌿 Popular Plant Guides</h2>
+
         <ul>
-            <li>Rose Care Guide</li>
-            <li>Tomato Growing Guide</li>
+            <li>Rose Plant Care</li>
             <li>Mango Plant Care</li>
-            <li>Organic Fertilizer Tips</li>
+            <li>Tomato Growing Guide</li>
+            <li>Organic Fertilizer Guide</li>
         </ul>
+
     </div>
 
+    <!-- SEARCH -->
+
     <div class="card">
-        <h2>📧 Stay Updated</h2>
 
-        <form>
-            <input type="email"
-                   placeholder="Enter your email"
-                   style="padding:10px;width:70%;">
+        <h2>🔍 Search Plant</h2>
 
-            <button type="submit"
-                    style="padding:10px;">
-                Subscribe
-            </button>
-        </form>
+        <input
+        type="text"
+        placeholder="Search plants, fertilizer, tips...">
+
     </div>
 
 </div>
 
 <footer>
-    🌱 Gardening Hub | Built for Plant Lovers
+
+    🌱 Gardening Tips Ujjal © 2026
+
 </footer>
 
 </body>
