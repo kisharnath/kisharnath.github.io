@@ -258,7 +258,23 @@ input[type=text]{
     </form>
 
 </div>
+<script>
+document.getElementById("emailForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
 
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbwUtebK6FMZNRlKqjPo9uWtFVLCfYNcEnL2yi4Mf_39xz4ONHUKPOixhYim4kVrg4R1zg/exec",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          email: document.getElementById("email").value
+        })
+      }
+    );
+
+    alert("Thank you!");
+});
+</script>
 <footer>
 
     🌱 Gardening Tips Ujjal © 2026
